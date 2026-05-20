@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I.F. Comics</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="logo-area">
+            <img src="CSS/assets/IF_logo.png" alt="I.F. Comics Logo">
+
+            <div class="logo-text">
+                <h1>I.F. Comics</h1>
+                <p>Stories • Games • Merch</p>
+            </div>
+        </div>
+
+        <nav class="nav">
+
+            <!-- LIBRARY -->
+
+            <button class="nav-btn active" onclick="showSection('home-section', this)">
+
+                <svg viewBox="0 0 24 24">
+                    <path d="M4 3h4v18H4zm6 0h4v18h-4zm6 0h4v18h-4z" />
+                </svg>
+
+                <span>Library</span>
+            </button>
+
+            <!-- GAMES -->
+
+            <button class="nav-btn" onclick="showSection('games-section', this)">
+
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M7 8h10a4 4 0 014 4v4a3 3 0 01-3 3h-1l-3-3H10l-3 3H6a3 3 0 01-3-3v-4a4 4 0 014-4zm1 3v2H6v2h2v2h2v-2h2v-2h-2v-2zm8 3h4v2h-4zm2-2h2v2h-2z" />
+                </svg>
+
+                <span>Games</span>
+            </button>
+
+            <!-- SHOP -->
+
+            <button class="nav-btn" onclick="showSection('shop-section', this)">
+
+                <svg viewBox="0 0 24 24">
+                    <path d="M6 7V6a6 6 0 1112 0v1h3v14H3V7zm2 0h8V6a4 4 0 10-8 0z" />
+                </svg>
+
+                <span>Shop</span>
+            </button>
+
+
+            <!-- NEWS -->
+
+            <button class="nav-btn" onclick="showSection('news-section', this)">
+
+                <svg viewBox="0 0 24 24">
+                    <path d="M4 5h16v14H4zm3 3v2h10V8zm0 4v2h6v-2z" />
+                </svg>
+
+                <span>News</span>
+            </button>
+
+            <button class="nav-btn" onclick="showSection('community-section', this)">
+
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M16 11a4 4 0 10-4-4 4 4 0 004 4zM8 13a4 4 0 10-4-4 4 4 0 004 4zm8 2c-3 0-6 1.5-6 3v3h12v-3c0-1.5-3-3-6-3zM8 15c-3 0-6 1.5-6 3v3h6v-3a4.7 4.7 0 011.4-3.2A8.3 8.3 0 008 15z" />
+                </svg>
+
+                <span>Community</span>
+            </button>
+
+            <!-- SETTINGS -->
+
+            <button class="nav-btn" onclick="showSection('settings-section', this)">
+
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M19.14 12.94a7.49 7.49 0 000-1.88l2.03-1.58-1.92-3.32-2.39.96a7.58 7.58 0 00-1.63-.95L14.96 2h-3.92l-.27 2.12a7.58 7.58 0 00-1.63.95l-2.39-.96-1.92 3.32 2.03 1.58a7.49 7.49 0 000 1.88L2.83 14.5l1.92 3.32 2.39-.96c.5.39 1.05.71 1.63.95L11.04 22h3.92l.27-2.12c.58-.24 1.13-.56 1.63-.95l2.39.96 1.92-3.32zM13 15a3 3 0 110-6 3 3 0 010 6z" />
+                </svg>
+
+                <span>Settings</span>
+            </button>
+
+            <!-- ACCOUNT -->
+
+            <button class="nav-btn" onclick="showSection('account-section', this)">
+
+                <svg viewBox="0 0 24 24">
+                    <path d="M12 12a5 5 0 100-10 5 5 0 000 10zm0 2c-4.4 0-8 2-8 4.5V22h16v-3.5C20 16 16.4 14 12 14z" />
+                </svg>
+
+                <span>Account</span>
+            </button>
+
+            <!-- SUPPORT -->
+
+            <button class="nav-btn" onclick="showSection('support-section', this)">
+
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M12 2a8 8 0 00-8 8v4a2 2 0 002 2h2v-6H6v-1a6 6 0 0112 0v1h-2v6h2a2 2 0 002-2v-4a8 8 0 00-8-8z" />
+                </svg>
+
+                <span>Support</span>
+            </button>
+        </nav>
+
+        <div class="sidebar-footer">
+            © 2026 I.F. Comics
+        </div>
+
+    </aside>
+
+    <!-- MAIN -->
+
+    <main class="main">
+
+        <!-- HOME SECTION -->
+
+        <div id="home-section" class="page-section active-section">
+
+            <section class="hero">
+                <h2>Enter the World of I.F. Comics</h2>
+
+                <p>
+                    Hello and welcome to the I.F. Comics website!
+                    Here you can read E-books—or E-comics,
+                    play I.F. related games, collect merch,
+                    and much more.
+                </p>
+
+                <div class="hero-buttons">
+                    <button class="primary-btn">
+                        Read Comics
+                    </button>
+                </div>
+            </section>
+
+            <section class="section">
+
+                <div class="section-header">
+                    <h3>Featured Comics</h3>
+                    <a href="#">View All</a>
+                </div>
+
+                <div class="card-grid">
+
+                    <div class="card">
+
+                        <button class="favorite-btn" onclick="toggleFavorite(this)">
+                            ☆
+                        </button>
+
+                        <div class="card-image">📖</div>
+
+                        <div class="card-content">
+                            <h4>Future Release</h4>
+
+                            <p>
+                                Additional stories and adventures are planned.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+
+                        <button class="favorite-btn" onclick="toggleFavorite(this)">
+                            ☆
+                        </button>
+
+                        <div class="card-image">📖</div>
+
+                        <div class="card-content">
+                            <h4>Future Release</h4>
+
+                            <p>
+                                Additional stories and adventures are planned.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+
+                        <button class="favorite-btn" onclick="toggleFavorite(this)">
+                            ☆
+                        </button>
+
+                        <div class="card-image">📖</div>
+
+                        <div class="card-content">
+                            <h4>Future Release</h4>
+
+                            <p>
+                                Additional stories and adventures are planned.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+        <!-- GAMES SECTION -->
+
+        <div id="games-section" class="page-section">
+
+            <section class="hero">
+                <h2>Play I.F. Games</h2>
+
+                <p>
+                    This is the official I.F. Games section!
+                    Here you can launch, download, and explore games
+                    connected to the I.F. universe.
+                </p>
+
+                <div class="hero-buttons">
+                    <button class="primary-btn">
+                        Browse Games
+                    </button>
+                </div>
+            </section>
+
+            <section class="section">
+
+                <div class="section-header">
+                    <h3>Games</h3>
+                    <a href="#">Explore</a>
+                </div>
+
+                <div class="card-grid">
+
+                    <div class="card">
+                        <div class="card-image">🎮</div>
+
+                        <div class="card-content">
+                            <h4>I.F. Arena</h4>
+                            <p>
+                                Multiplayer combat inside the I.F. universe.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">🛰</div>
+
+                        <div class="card-content">
+                            <h4>Nova Drift</h4>
+                            <p>
+                                Tactical space battles with comic-inspired lore.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">🧩</div>
+
+                        <div class="card-content">
+                            <h4>Coming Soon</h4>
+                            <p>
+                                More games and experiments are on the way.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+        <!-- SHOP SECTION -->
+
+        <div id="shop-section" class="page-section">
+
+            <section class="hero">
+                <h2>I.F. Shop</h2>
+
+                <p>
+                    Browse official I.F. Comics merchandise,
+                    collectibles, posters, digital items,
+                    and more.
+                </p>
+
+                <div class="hero-buttons">
+                    <button class="primary-btn">
+                        Browse Store
+                    </button>
+
+                    <button class="secondary-btn">
+                        Featured Items
+                    </button>
+                </div>
+            </section>
+
+            <section class="section">
+
+                <div class="section-header">
+                    <h3>Featured Products</h3>
+                    <a href="#">View All</a>
+                </div>
+
+                <div class="card-grid">
+
+                    <!-- PRODUCT -->
+
+                    <div class="shop-card">
+
+                        <div class="shop-image">
+                            <img src="CSS/assets/shop/poster1.png" alt="Poster">
+                        </div>
+
+                        <div class="shop-content">
+
+                            <div class="shop-top">
+                                <h4>I.F. Universe Poster</h4>
+
+                                <span class="shop-price">
+                                    $14.99
+                                </span>
+                            </div>
+
+                            <p>
+                                High-quality glossy poster featuring
+                                iconic I.F. artwork.
+                            </p>
+
+                            <button class="buy-btn">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <!-- PRODUCT -->
+
+                    <div class="shop-card">
+
+                        <div class="shop-image">
+                            <img src="CSS/assets/shop/shirt1.png" alt="Shirt">
+                        </div>
+
+                        <div class="shop-content">
+
+                            <div class="shop-top">
+                                <h4>I.F. Logo Shirt</h4>
+
+                                <span class="shop-price">
+                                    $24.99
+                                </span>
+                            </div>
+
+                            <p>
+                                Official soft cotton I.F. Comics
+                                t-shirt with embroidered logo.
+                            </p>
+
+                            <button class="buy-btn">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <!-- PRODUCT -->
+
+                    <div class="shop-card">
+
+                        <div class="shop-image">
+                            <img src="CSS/assets/shop/book1.png" alt="Comic Book">
+                        </div>
+
+                        <div class="shop-content">
+
+                            <div class="shop-top">
+                                <h4>Digital Comic Pack</h4>
+
+                                <span class="shop-price">
+                                    $9.99
+                                </span>
+                            </div>
+
+                            <p>
+                                Collection of digital I.F. comics
+                                bundled together.
+                            </p>
+
+                            <button class="buy-btn">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+        <!-- SETTINGS SECTION -->
+
+        <div id="settings-section" class="page-section">
+
+            <section class="hero">
+                <h2>Settings</h2>
+
+                <p>
+                    Customize your I.F. Comics experience,
+                    preferences, account settings,
+                    and future features.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <button class="primary-btn">
+                        Account
+                    </button>
+
+                    <button class="secondary-btn">
+                        Preferences
+                    </button>
+
+                </div>
+            </section>
+
+        </div>
+
+        <!-- NEWS SECTION -->
+
+        <div id="news-section" class="page-section">
+
+            <section class="hero">
+                <h2>I.F. News</h2>
+
+                <p>
+                    Stay updated with the latest announcements,
+                    comic releases, games, updates,
+                    and community events from I.F. Comics.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <button class="primary-btn">
+                        Latest Updates
+                    </button>
+
+                    <button class="secondary-btn">
+                        Patch Notes
+                    </button>
+
+                </div>
+            </section>
+
+            <section class="section">
+
+                <div class="section-header">
+                    <h3>Recent News</h3>
+                    <a href="#">View All</a>
+                </div>
+
+                <div class="card-grid">
+
+                    <div class="card">
+
+                        <div class="card-image">
+                            📰
+                        </div>
+
+                        <div class="card-content">
+                            <h4>Website Launch</h4>
+
+                            <p>
+                                The official I.F. Comics website
+                                is now live and expanding.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+
+                        <div class="card-image">
+                            🎮
+                        </div>
+
+                        <div class="card-content">
+                            <h4>Games In Development</h4>
+
+                            <p>
+                                New projects and experimental
+                                games are currently being worked on.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+
+                        <div class="card-image">
+                            📖
+                        </div>
+
+                        <div class="card-content">
+                            <h4>Upcoming Comics</h4>
+
+                            <p>
+                                More stories and worlds
+                                are planned for future releases.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+        <!-- COMMUNITY SECTION -->
+
+        <div id="community-section" class="page-section">
+
+            <section class="hero">
+                <h2>I.F. Community</h2>
+
+                <p>
+                    Connect with other fans, creators,
+                    players, and readers inside
+                    the I.F. Comics community.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <button class="primary-btn">
+                        Join Community
+                    </button>
+
+                    <button class="secondary-btn">
+                        Community News
+                    </button>
+
+                </div>
+            </section>
+
+            <section class="section">
+
+                <div class="section-header">
+                    <h3>Community Highlights</h3>
+                    <a href="#">View All</a>
+                </div>
+
+                <div class="card-grid">
+
+                    <div class="card">
+
+                        <div class="card-image">
+                            👥
+                        </div>
+
+                        <div class="card-content">
+                            <h4>Fan Discussions</h4>
+
+                            <p>
+                                Talk with other readers and fans
+                                about comics, games, and theories.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+
+                        <div class="card-image">
+                            🎨
+                        </div>
+
+                        <div class="card-content">
+                            <h4>Creator Content</h4>
+
+                            <p>
+                                Share artwork, concepts,
+                                and ideas with the community.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+
+                        <div class="card-image">
+                            🌎
+                        </div>
+
+                        <div class="card-content">
+                            <h4>Events</h4>
+
+                            <p>
+                                Participate in future events,
+                                updates, and community activities.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+        <!-- ACCOUNT SECTION -->
+
+        <div id="account-section" class="page-section">
+
+            <section class="hero">
+                <h2>Your Account</h2>
+
+                <p>
+                    Manage your I.F. Comics profile,
+                    saved items, preferences,
+                    and future account features.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <button class="primary-btn">
+                        Edit Profile
+                    </button>
+
+                    <button class="secondary-btn">
+                        Account Settings
+                    </button>
+
+                </div>
+            </section>
+
+            <section class="section">
+
+                <div class="account-container">
+
+                    <div class="account-box">
+
+                        <h3>Profile</h3>
+
+                        <p>
+                            Username:
+                        </p>
+
+                        <p class="account-placeholder">
+                            Add username here.
+                        </p>
+
+                        <p>
+                            Bio:
+                        </p>
+
+                        <p class="account-placeholder">
+                            Add bio here.
+                        </p>
+
+                    </div>
+
+                    <div class="account-box">
+
+                        <h3>Saved Items</h3>
+
+                        <p class="account-placeholder">
+                            Favorite comics, merch,
+                            and saved content will appear here.
+                        </p>
+
+                    </div>
+
+                    <div class="account-box">
+
+                        <h3>Notifications</h3>
+
+                        <p class="account-placeholder">
+                            Notification settings
+                            and alerts will appear here.
+                        </p>
+
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+
+        <!-- SUPPORT SECTION -->
+
+        <div id="support-section" class="page-section">
+
+            <section class="hero">
+                <h2>Support Center</h2>
+
+                <p>
+                    Need help, official information,
+                    or ways to contact I.F. Comics?
+                    Everything is available here.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <button class="primary-btn" onclick="window.location.href='mailto:IF.Comics@outlook.com'">
+
+                        Email Us
+                    </button>
+
+                    <button class="secondary-btn" onclick="window.open('https://discord.gg/9EBvsMxVxd')">
+
+                        Join Discord
+                    </button>
+
+                </div>
+            </section>
+
+            <!-- SUPPORT LAYOUT -->
+
+            <section class="support-layout">
+
+                <!-- LEFT SIDE -->
+
+                <div class="support-panel">
+
+                    <h3>Contact Information</h3>
+
+                    <div class="support-item">
+                        <h4>Email</h4>
+
+                        <p>
+                            IF.Comics@outlook.com
+                        </p>
+                    </div>
+
+                    <div class="support-item">
+                        <h4>Discord</h4>
+
+                        <p>
+                            https://discord.gg/9EBvsMxVxd
+                        </p>
+                    </div>
+
+                    <div class="support-item">
+                        <h4>Business Hours</h4>
+
+                        <p>
+                            <br>
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- RIGHT SIDE -->
+
+                <div class="support-panel">
+
+                    <h3>Legal & Information</h3>
+
+                    <button class="support-btn" onclick="toggleSupportBox('privacy-box')">
+
+                        Privacy Policy
+                    </button>
+
+                    <div id="privacy-box" class="support-dropdown">
+
+                        <p>
+                            <b>I.F. Comics – Privacy Policy</b><br>
+                            <i>Last Updated: 05/18/2026</i><br><br>
+
+                            I.F. Comics (“we,” “our,” or “us”) is committed to protecting your privacy and
+                            ensuring that
+                            your personal information is handled responsibly. <br><br>
+
+                            This Privacy Policy explains how we collect, use, store, and protect information
+                            when you
+                            interact with our website, services, email communications, and community platforms
+                            such as
+                            Discord. <br><br>
+
+                            By accessing or using our services, you agree to the practices described in this
+                            Privacy
+                            Policy. <br><br>
+
+                            <b>1. Information We Collect</b><br>
+                            We collect information in the following ways: <br><br>
+
+                            <b>1.1 Information You Provide Directly</b><br>
+                            Email addresses submitted through contact forms or newsletter sign‑ups; messages you
+                            send to
+                            us via email or Discord; any information you voluntarily share when communicating
+                            with our
+                            team. <br><br>
+
+                            <b>1.2 Automatically Collected Information</b><br>
+                            IP address, browser type and version, device information, pages visited and time
+                            spent on
+                            the site, and basic analytics data. We use this information to improve website
+                            performance
+                            and user experience. <br><br>
+
+                            <b>1.3 Third‑Party Platforms</b><br>
+                            If you join our Discord server or interact with us on other platforms, those
+                            services may
+                            collect additional information under their own privacy policies. We do not control
+                            how
+                            third‑party platforms handle your data. <br><br>
+
+                            <b>2. How We Use Your Information</b><br>
+                            We use collected information to respond to messages and inquiries, provide updates,
+                            announcements, or important notices, improve our website, services, and community
+                            experience, maintain the safety and integrity of our platforms, and manage internal
+                            operations such as analytics and troubleshooting. We do not sell or rent your
+                            personal
+                            information to third parties. <br><br>
+
+                            <b>3. How We Store and Protect Your Information</b><br>
+                            We take reasonable measures to protect your information from unauthorized access,
+                            loss, or
+                            misuse. These measures may include secure email systems, limited access to internal
+                            data,
+                            and use of reputable hosting and security tools. However, no method of online
+                            transmission
+                            is 100% secure, and we cannot guarantee absolute protection. <br><br>
+
+                            <b>4. Sharing Your Information</b><br>
+                            We may share your information only in the following situations: service providers
+                            who help
+                            operate our website or email systems; legal requirements; and community platforms
+                            where
+                            information you share publicly (e.g., Discord messages) becomes visible. We do not
+                            share
+                            your information for advertising or marketing by third parties. <br><br>
+
+                            <b>5. Your Choices and Rights</b><br>
+                            You have the right to request that we delete your email or other information, opt
+                            out of
+                            receiving non‑essential communications, and choose what you share in our community
+                            spaces.
+                            To request changes or removal, simply contact us through our usual email channels.
+                            <br><br>
+
+                            <b>6. Discord and Community Interactions</b><br>
+                            If you join our Discord server, your username and messages may be visible to other
+                            members.
+                            Discord collects its own data under its own Privacy Policy. We cannot control or
+                            delete
+                            information stored by Discord. For urgent matters, Discord may be a faster way to
+                            reach us,
+                            but participation is optional. <br><br>
+
+                            <b>7. Children’s Privacy</b><br>
+                            Our content is intended for general audiences. We do not knowingly collect personal
+                            information from children under the age required by local laws without parental
+                            consent. If
+                            you believe information has been collected improperly, please contact us so we can
+                            remove
+                            it. <br><br>
+
+                            <b>8. Changes to This Privacy Policy</b><br>
+                            We may update this Privacy Policy from time to time. When changes are made, the
+                            “Last
+                            Updated” date at the top will be revised. Continued use of our services after
+                            changes are
+                            posted means you accept the updated policy. <br><br>
+
+                            <b>9. Contact Us</b><br>
+                            If you have questions about this Privacy Policy or how your information is handled,
+                            you can
+                            reach us at: I.F. Comics – Support Team. Email: [Insert Email]. Discord:
+                            https://discord.gg/9EBvsMxVxd. <br><br>
+
+                            <b>I.F. Comics © 2026 All Rights Reserved.</b><br>
+                            I.F. Comics, logos, artwork, games, comics, and related media are property of I.F.
+                            Comics.
+                            Website Version 1.0.
+                        </p>
+
+
+                    </div>
+
+                    <button class="support-btn" onclick="toggleSupportBox('terms-box')">
+
+                        Terms of Use
+                    </button>
+
+                    <div id="terms-box" class="support-dropdown">
+
+                        <p>
+                            <b>I.F. Comics – Terms of Use</b><br>
+                            <i>Last Updated: 05/18/2026</i><br><br>
+
+                            Welcome to I.F. Comics. By accessing or using our website, content, artwork, games,
+                            or
+                            community platforms (including Discord), you agree to these Terms of Use. If you do
+                            not
+                            agree, please do not use our services.<br><br>
+
+                            <b>1. Use of Our Services</b><br>
+                            You may use our website and content for personal, non‑commercial purposes only. You
+                            agree
+                            not to copy, redistribute, modify, or sell any part of our content without written
+                            permission. You also agree not to misuse our services, attempt to disrupt our
+                            website, or
+                            engage in harmful behavior toward our community.<br><br>
+
+                            <b>2. Intellectual Property</b><br>
+                            All artwork, comics, characters, logos, stories, games, and related media on this
+                            website
+                            are the property of I.F. Comics. You may not reproduce, distribute, or use our
+                            intellectual
+                            property without permission. Fan art is allowed as long as it is non‑commercial and
+                            properly
+                            credited.<br><br>
+
+                            <b>3. User Conduct</b><br>
+                            When interacting with our website or community platforms, you agree to behave
+                            respectfully.
+                            Harassment, hate speech, spam, or harmful behavior is not allowed. We reserve the
+                            right to
+                            remove content or restrict access to anyone who violates these rules.<br><br>
+
+                            <b>4. Community Platforms (Including Discord)</b><br>
+                            If you join our Discord server or other community spaces, you must follow the rules
+                            of those
+                            platforms. Your messages may be visible to others. We are not responsible for
+                            content posted
+                            by users. Discord has its own Terms of Service and Privacy Policy, which apply
+                            separately.<br><br>
+
+                            <b>5. Third‑Party Links</b><br>
+                            Our website may contain links to third‑party sites. We are not responsible for the
+                            content,
+                            policies, or actions of those websites. Visiting third‑party sites is at your own
+                            discretion.<br><br>
+
+                            <b>6. Disclaimer of Warranties</b><br>
+                            Our website and content are provided “as is” without warranties of any kind. We do
+                            not
+                            guarantee that the site will always be available, error‑free, or secure. You use our
+                            services at your own risk.<br><br>
+
+                            <b>7. Limitation of Liability</b><br>
+                            To the fullest extent allowed by law, I.F. Comics is not responsible for any damages
+                            resulting from your use of our website, content, or community platforms. This
+                            includes data
+                            loss, account issues, or interactions with other users.<br><br>
+
+                            <b>8. Changes to These Terms</b><br>
+                            We may update these Terms of Use from time to time. When changes are made, the “Last
+                            Updated” date will be revised. Continued use of our services means you accept the
+                            updated
+                            terms.<br><br>
+
+                            <b>9. Termination</b><br>
+                            We may suspend or terminate access to our website or community platforms if you
+                            violate
+                            these Terms or engage in harmful behavior. We may also remove content that violates
+                            our
+                            rules or legal requirements.<br><br>
+
+                            <b>10. Contact Us</b><br>
+                            If you have questions about these Terms of Use, you can contact us through email or
+                            Discord.
+                            We are here to help clarify anything you need.<br><br>
+
+                            <b>I.F. Comics © 2026 All Rights Reserved.</b><br>
+                            All artwork, comics, games, characters, and related media are property of I.F.
+                            Comics.
+                            Website Version 1.0.
+                        </p>
+
+
+                    </div>
+
+                    <button class="support-btn" onclick="toggleSupportBox('credits-box')">
+
+                        Credits
+                    </button>
+
+                    <div id="credits-box" class="support-dropdown">
+
+                        <p>
+                            <b>Credits</b><br>
+                            Website created and designed by <b>Felix Haney</b>.<br>
+                            Business Owners: <b>Felix Haney</b> and <b>Isaac Troyer</b>.<br>
+                            All comics, artwork, characters, and stories are original creations under <b>I.F.
+                                Comics</b>.<br>
+                            Special thanks to ChatGPT for brainstorming, formatting help, and writing
+                            support.<br>
+                            Additional acknowledgments will be added as the website continues to grow.<br><br>
+                            <b>I.F. Comics © 2026 All Rights Reserved.</b>
+                        </p>
+
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- FOOTER -->
+
+            <section class="support-footer">
+
+                <p>
+                    I.F. Comics © 2026
+                    <br>
+
+                    All Rights Reserved.
+                    <br><br>
+
+                    I.F. Comics, logos,
+                    artwork, games, comics,
+                    and related media are property
+                    of I.F. Comics.
+                    <br><br>
+
+                    Website Version 1.0
+                </p>
+
+            </section>
+
+        </div>
+    </main>
+
+    <!-- SCRIPT -->
+
+    <script>
+        function showSection(sectionId, buttonElement) {
+
+            document.querySelectorAll(".page-section").forEach(section => {
+                section.classList.remove("active-section");
+            });
+
+            document.getElementById(sectionId)
+                .classList.add("active-section");
+
+            document.querySelectorAll(".nav-btn").forEach(btn => {
+                btn.classList.remove("active");
+            });
+
+            buttonElement.classList.add("active");
+        }
+
+        function toggleSupportBox(id) {
+
+            const box = document.getElementById(id);
+
+            if (box.style.display === "block") {
+                box.style.display = "none";
+            } else {
+                box.style.display = "block";
+            }
+
+        }
+
+        function showSection(sectionId, buttonElement) {
+
+            document.querySelectorAll(".page-section").forEach(section => {
+                section.classList.remove("active-section");
+            });
+
+            document.getElementById(sectionId)
+                .classList.add("active-section");
+
+            document.querySelectorAll(".nav-btn").forEach(btn => {
+                btn.classList.remove("active");
+            });
+
+            buttonElement.classList.add("active");
+        }
+
+        /* FAVORITES */
+
+        function toggleFavorite(button) {
+
+            button.classList.toggle("favorited");
+
+            if (button.classList.contains("favorited")) {
+                button.innerHTML = "★";
+            } else {
+                button.innerHTML = "☆";
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
