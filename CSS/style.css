@@ -559,3 +559,18 @@ body {
     color: #ffd54a;
     background: rgba(255, 213, 74, 0.12);
 }
+
+.game-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.game-link .card {
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.game-link .card:hover {
+    transform: translateY(-6px);
+}
